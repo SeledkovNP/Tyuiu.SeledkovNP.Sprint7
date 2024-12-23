@@ -31,7 +31,7 @@ namespace Tyuiu.SeledkovNP.Sprint7.From
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Glavn));
-            textBox1 = new TextBox();
+            textBox_SNP = new TextBox();
             button_save_SN = new Button();
             Info = new Button();
             Open = new Button();
@@ -41,11 +41,12 @@ namespace Tyuiu.SeledkovNP.Sprint7.From
             button2 = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // textBox_SNP
             // 
-            resources.ApplyResources(textBox1, "textBox1");
-            textBox1.Name = "textBox1";
-            textBox1.UseWaitCursor = true;
+            resources.ApplyResources(textBox_SNP, "textBox_SNP");
+            textBox_SNP.Name = "textBox_SNP";
+            textBox_SNP.UseWaitCursor = true;
+            textBox_SNP.TextChanged += textBox_SNP_TextChanged;
             // 
             // button_save_SN
             // 
@@ -107,7 +108,7 @@ namespace Tyuiu.SeledkovNP.Sprint7.From
             Controls.Add(Open);
             Controls.Add(Info);
             Controls.Add(button_save_SN);
-            Controls.Add(textBox1);
+            Controls.Add(textBox_SNP);
             ForeColor = SystemColors.ControlText;
             Name = "Glavn";
             TransparencyKey = Color.FromArgb(255, 128, 0);
@@ -121,7 +122,7 @@ namespace Tyuiu.SeledkovNP.Sprint7.From
 
         #endregion
 
-        private TextBox textBox1;
+        private TextBox textBox_SNP;
         private Button button_save_SN;
         private Button Info;
         private Button Open;

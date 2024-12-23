@@ -33,15 +33,14 @@ namespace Tyuiu.SeledkovNP.Sprint7.From
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Info));
             toolTip1 = new ToolTip(components);
             pictureBox1 = new PictureBox();
+            Let = new Button();
             openFileDialog1 = new OpenFileDialog();
             Inforac = new TextBox();
-            Let = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
-            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(12, 79);
             pictureBox1.Name = "pictureBox1";
@@ -50,32 +49,35 @@ namespace Tyuiu.SeledkovNP.Sprint7.From
             pictureBox1.TabStop = false;
             toolTip1.SetToolTip(pictureBox1, "Иконка ползователя");
             // 
-            // openFileDialog1
-            // 
-            openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // Inforac
-            // 
-            Inforac.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            Inforac.Location = new Point(381, 36);
-            Inforac.Multiline = true;
-            Inforac.Name = "Inforac";
-            Inforac.ReadOnly = true;
-            Inforac.Size = new Size(390, 359);
-            Inforac.TabIndex = 1;
-            Inforac.Text = resources.GetString("Inforac.Text");
-            // 
             // Let
             // 
-            Let.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            Let.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             Let.BackColor = Color.Orange;
             Let.Location = new Point(662, 401);
             Let.Name = "Let";
             Let.Size = new Size(109, 37);
             Let.TabIndex = 2;
             Let.Text = "Закрыт";
+            toolTip1.SetToolTip(Let, "Перейти на прошлую страницу");
             Let.UseVisualStyleBackColor = false;
             Let.Click += Let_Click;
+            // 
+            // openFileDialog1
+            // 
+            openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // Inforac
+            // 
+            Inforac.Anchor = AnchorStyles.Top;
+            Inforac.Location = new Point(381, 36);
+            Inforac.Multiline = true;
+            Inforac.Name = "Inforac";
+            Inforac.ReadOnly = true;
+            Inforac.Size = new Size(390, 359);
+            Inforac.TabIndex = 1;
+            Inforac.TabStop = false;
+            Inforac.Text = resources.GetString("Inforac.Text");
+            Inforac.TextChanged += Inforac_TextChanged;
             // 
             // Info
             // 
