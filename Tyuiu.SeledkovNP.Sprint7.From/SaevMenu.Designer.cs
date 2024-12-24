@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Saev_menu));
             openFileDialog1 = new OpenFileDialog();
             toolTip1 = new ToolTip(components);
             Closed = new Button();
@@ -43,9 +44,9 @@
             // 
             Closed.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             Closed.BackColor = Color.Orange;
-            Closed.Location = new Point(12, 50);
+            Closed.Location = new Point(52, 88);
             Closed.Name = "Closed";
-            Closed.Size = new Size(123, 60);
+            Closed.Size = new Size(89, 36);
             Closed.TabIndex = 0;
             Closed.Text = "Закрыт";
             toolTip1.SetToolTip(Closed, "Перейти в прошлое окно");
@@ -56,19 +57,21 @@
             // 
             Save.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             Save.BackColor = Color.LawnGreen;
-            Save.Location = new Point(224, 49);
+            Save.Location = new Point(181, 88);
             Save.Name = "Save";
-            Save.Size = new Size(133, 61);
+            Save.Size = new Size(89, 37);
             Save.TabIndex = 1;
             Save.Text = "Сохранить";
             toolTip1.SetToolTip(Save, "Безвозратно сохранить файл");
             Save.UseVisualStyleBackColor = false;
+            Save.Click += Save_Click;
             // 
             // Saev_menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(369, 150);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(311, 177);
             Controls.Add(Save);
             Controls.Add(Closed);
             Name = "Saev_menu";

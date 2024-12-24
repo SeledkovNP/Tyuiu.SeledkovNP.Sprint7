@@ -26,5 +26,10 @@ namespace Tyuiu.SeledkovNP.Sprint7.From
         {
             this.Close();
         }
+
+        private void Save_Click(object sender, EventArgs e)
+        {
+            // Сохранение
+        }
     }
 }

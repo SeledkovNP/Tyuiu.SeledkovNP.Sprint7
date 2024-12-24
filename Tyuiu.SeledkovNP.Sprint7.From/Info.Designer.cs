@@ -42,9 +42,9 @@ namespace Tyuiu.SeledkovNP.Sprint7.From
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(12, 79);
+            pictureBox1.Location = new Point(47, 98);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(246, 276);
+            pictureBox1.Size = new Size(261, 249);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             toolTip1.SetToolTip(pictureBox1, "Иконка ползователя");
@@ -83,6 +83,7 @@ namespace Tyuiu.SeledkovNP.Sprint7.From
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(800, 450);
             Controls.Add(Let);
             Controls.Add(Inforac);

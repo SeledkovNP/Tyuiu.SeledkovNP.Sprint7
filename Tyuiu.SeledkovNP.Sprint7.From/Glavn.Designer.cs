@@ -31,22 +31,20 @@ namespace Tyuiu.SeledkovNP.Sprint7.From
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Glavn));
-            textBox_SNP = new TextBox();
             button_save_SN = new Button();
             Info = new Button();
             Open = new Button();
             openFileDialog1 = new OpenFileDialog();
             toolTip1 = new ToolTip(components);
-            button1 = new Button();
-            button2 = new Button();
+            Sort = new Button();
+            Poisk = new Button();
+            textBox_SNP = new TextBox();
+            panelList = new Panel();
+            dataGridViewMainGrid = new DataGridView();
+            textPois = new TextBox();
+            panelList.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewMainGrid).BeginInit();
             SuspendLayout();
-            // 
-            // textBox_SNP
-            // 
-            resources.ApplyResources(textBox_SNP, "textBox_SNP");
-            textBox_SNP.Name = "textBox_SNP";
-            textBox_SNP.UseWaitCursor = true;
-            textBox_SNP.TextChanged += textBox_SNP_TextChanged;
             // 
             // button_save_SN
             // 
@@ -56,7 +54,7 @@ namespace Tyuiu.SeledkovNP.Sprint7.From
             toolTip1.SetToolTip(button_save_SN, resources.GetString("button_save_SN.ToolTip"));
             button_save_SN.UseVisualStyleBackColor = false;
             button_save_SN.UseWaitCursor = true;
-            button_save_SN.Click += button1_Click;
+            button_save_SN.Click += Button_save_Click;
             // 
             // Info
             // 
@@ -74,7 +72,7 @@ namespace Tyuiu.SeledkovNP.Sprint7.From
             toolTip1.SetToolTip(Open, resources.GetString("Open.ToolTip"));
             Open.UseVisualStyleBackColor = true;
             Open.UseWaitCursor = true;
-            Open.Click += Open_Click;
+            Open.Click += Open_Click_1;
             // 
             // openFileDialog1
             // 
@@ -84,51 +82,87 @@ namespace Tyuiu.SeledkovNP.Sprint7.From
             // 
             toolTip1.Popup += toolTip1_Popup;
             // 
-            // button1
+            // Sort
             // 
-            resources.ApplyResources(button1, "button1");
-            button1.Name = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.UseWaitCursor = true;
+            resources.ApplyResources(Sort, "Sort");
+            Sort.Name = "Sort";
+            Sort.UseVisualStyleBackColor = true;
+            Sort.UseWaitCursor = true;
             // 
-            // button2
+            // Poisk
             // 
-            resources.ApplyResources(button2, "button2");
-            button2.Name = "button2";
-            button2.UseVisualStyleBackColor = true;
-            button2.UseWaitCursor = true;
+            resources.ApplyResources(Poisk, "Poisk");
+            Poisk.Name = "Poisk";
+            Poisk.UseVisualStyleBackColor = true;
+            Poisk.UseWaitCursor = true;
+            Poisk.Click += Poisk_Click;
+            // 
+            // textBox_SNP
+            // 
+            resources.ApplyResources(textBox_SNP, "textBox_SNP");
+            textBox_SNP.Name = "textBox_SNP";
+            textBox_SNP.ReadOnly = true;
+            textBox_SNP.UseWaitCursor = true;
+            textBox_SNP.TextChanged += textBox_SNP_TextChanged;
+            // 
+            // panelList
+            // 
+            panelList.Controls.Add(dataGridViewMainGrid);
+            panelList.Controls.Add(textPois);
+            panelList.Controls.Add(Poisk);
+            resources.ApplyResources(panelList, "panelList");
+            panelList.Name = "panelList";
+            panelList.UseWaitCursor = true;
+            // 
+            // dataGridViewMainGrid
+            // 
+            dataGridViewMainGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            resources.ApplyResources(dataGridViewMainGrid, "dataGridViewMainGrid");
+            dataGridViewMainGrid.Name = "dataGridViewMainGrid";
+            dataGridViewMainGrid.UseWaitCursor = true;
+            dataGridViewMainGrid.CellContentClick += dataGridViewMainGrid_CellContentClick;
+            // 
+            // textPois
+            // 
+            resources.ApplyResources(textPois, "textPois");
+            textPois.Name = "textPois";
+            textPois.UseWaitCursor = true;
+            textPois.TextChanged += textPois_TextChanged;
             // 
             // Glavn
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(panelList);
+            Controls.Add(button_save_SN);
+            Controls.Add(Sort);
+            Controls.Add(textBox_SNP);
             Controls.Add(Open);
             Controls.Add(Info);
-            Controls.Add(button_save_SN);
-            Controls.Add(textBox_SNP);
             ForeColor = SystemColors.ControlText;
             Name = "Glavn";
             TransparencyKey = Color.FromArgb(255, 128, 0);
             UseWaitCursor = true;
             Load += Glavn_Load;
+            panelList.ResumeLayout(false);
+            panelList.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewMainGrid).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
-
-
         #endregion
-
-        private TextBox textBox_SNP;
         private Button button_save_SN;
         private Button Info;
         private Button Open;
         private OpenFileDialog openFileDialog1;
         private ToolTip toolTip1;
-        private Button button1;
-        private Button button2;
+        private Button Sort;
+        private Button Poisk;
+        private TextBox textBox_SNP;
+        private Panel panelList;
+        private TextBox textPois;
+        private DataGridView dataGridViewMainGrid;
     }
 }
