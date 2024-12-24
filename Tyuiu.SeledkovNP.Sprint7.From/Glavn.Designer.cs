@@ -42,6 +42,7 @@ namespace Tyuiu.SeledkovNP.Sprint7.From
             panelList = new Panel();
             dataGridViewMainGrid = new DataGridView();
             textPois = new TextBox();
+            saveFileDialog_SNP2 = new SaveFileDialog();
             panelList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewMainGrid).BeginInit();
             SuspendLayout();
@@ -129,6 +130,10 @@ namespace Tyuiu.SeledkovNP.Sprint7.From
             textPois.UseWaitCursor = true;
             textPois.TextChanged += textPois_TextChanged;
             // 
+            // saveFileDialog_SNP2
+            // 
+            saveFileDialog_SNP2.FileOk += saveFileDialog1_FileOk;
+            // 
             // Glavn
             // 
             resources.ApplyResources(this, "$this");
@@ -164,5 +169,6 @@ namespace Tyuiu.SeledkovNP.Sprint7.From
         private Panel panelList;
         private TextBox textPois;
         private DataGridView dataGridViewMainGrid;
+        private SaveFileDialog saveFileDialog_SNP2;
     }
 }

@@ -201,19 +201,22 @@ namespace Tyuiu.SeledkovNP.Sprint7.From
 
         private void Poisk_Click(object sender, EventArgs e)
         {
-            // Получаем текст из textPois
-            string searchText = textPois.Text;
+            string searchValue = textPois.Text;
 
-            // Очищаем предыдущие результаты поиска
-            dataGridViewMainGrid.ClearSelection();
-
-            // Проходимся по всем строкам dataGridViewMainGrid
+            // Метод который обозначаеть Поиск Строку столбцом
             foreach (DataGridViewRow row in dataGridViewMainGrid.Rows)
             {
-                // Проверяем, содержит ли первая ячейка в текущей строке искомый текст
-                if (row.Cells[0].Value != null && row.Cells[0].Value.ToString().Contains(searchText))
+                bool found = false;
+                foreach (DataGridViewCell cell in row.Cells)
                 {
-                    // Выделяем строку, если текст найден
+                    if (cell.Value != null && cell.Value.ToString().Contains(searchValue))
+                    {
+                        found = true;
+                        break;
+                    }
+                }
+                if (found)
+                {
                     row.Selected = true;
                     break;
                 }
@@ -232,6 +235,11 @@ namespace Tyuiu.SeledkovNP.Sprint7.From
 
             // Вызываем метод поиска при изменении текста
             Poisk_Click(sender, e);
+        }
+
+        private void saveFileDialog1_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+
         }
     }
 }

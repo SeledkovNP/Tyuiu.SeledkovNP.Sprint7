@@ -310,13 +310,13 @@
     <value>17, 17</value>
   </metadata>
   <data name="Sort.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+    <value>Bottom, Right</value>
   </data>
   <data name="Sort.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="Sort.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1286, 542</value>
+    <value>1298, 542</value>
   </data>
   <data name="Sort.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 23</value>
@@ -326,6 +326,9 @@
   </data>
   <data name="Sort.Text" xml:space="preserve">
     <value>Сортировка</value>
+  </data>
+  <data name="Sort.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;Sort.Name" xml:space="preserve">
     <value>Sort</value>
@@ -366,6 +369,9 @@
   <data name="&gt;&gt;Poisk.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="textBox_SNP.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
   <data name="textBox_SNP.Location" type="System.Drawing.Point, System.Drawing">
     <value>1286, 529</value>
   </data>
@@ -377,6 +383,9 @@
   </data>
   <data name="textBox_SNP.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="textBox_SNP.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;textBox_SNP.Name" xml:space="preserve">
     <value>textBox_SNP</value>
@@ -453,6 +462,9 @@
   <data name="&gt;&gt;panelList.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="saveFileDialog_SNP2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>253, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -17503,6 +17515,12 @@
   </data>
   <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialog_SNP2.Name" xml:space="preserve">
+    <value>saveFileDialog_SNP2</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialog_SNP2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Glavn</value>

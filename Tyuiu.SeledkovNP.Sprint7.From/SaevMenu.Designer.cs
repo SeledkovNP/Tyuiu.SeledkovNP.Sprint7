@@ -34,6 +34,7 @@
             toolTip1 = new ToolTip(components);
             Closed = new Button();
             Save = new Button();
+            saveFileDialog_SNP = new SaveFileDialog();
             SuspendLayout();
             // 
             // openFileDialog1
@@ -86,5 +87,6 @@
         private ToolTip toolTip1;
         private Button Closed;
         private Button Save;
+        private SaveFileDialog saveFileDialog_SNP;
     }
 }
