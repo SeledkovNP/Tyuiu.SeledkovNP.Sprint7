@@ -34,8 +34,8 @@ namespace Tyuiu.SeledkovNP.Sprint7.From
             button_save_SN = new Button();
             Info = new Button();
             Open = new Button();
-            openFileDialog1 = new OpenFileDialog();
-            toolTip1 = new ToolTip(components);
+            openFileDialog_SNP = new OpenFileDialog();
+            toolTip_SNP = new ToolTip(components);
             Sort = new Button();
             Poisk = new Button();
             textBox_SNP = new TextBox();
@@ -52,7 +52,7 @@ namespace Tyuiu.SeledkovNP.Sprint7.From
             resources.ApplyResources(button_save_SN, "button_save_SN");
             button_save_SN.BackColor = Color.PaleGreen;
             button_save_SN.Name = "button_save_SN";
-            toolTip1.SetToolTip(button_save_SN, resources.GetString("button_save_SN.ToolTip"));
+            toolTip_SNP.SetToolTip(button_save_SN, resources.GetString("button_save_SN.ToolTip"));
             button_save_SN.UseVisualStyleBackColor = false;
             button_save_SN.UseWaitCursor = true;
             button_save_SN.Click += Button_save_Click;
@@ -61,7 +61,7 @@ namespace Tyuiu.SeledkovNP.Sprint7.From
             // 
             resources.ApplyResources(Info, "Info");
             Info.Name = "Info";
-            toolTip1.SetToolTip(Info, resources.GetString("Info.ToolTip"));
+            toolTip_SNP.SetToolTip(Info, resources.GetString("Info.ToolTip"));
             Info.UseVisualStyleBackColor = true;
             Info.UseWaitCursor = true;
             Info.Click += Info_Click;
@@ -70,18 +70,18 @@ namespace Tyuiu.SeledkovNP.Sprint7.From
             // 
             resources.ApplyResources(Open, "Open");
             Open.Name = "Open";
-            toolTip1.SetToolTip(Open, resources.GetString("Open.ToolTip"));
+            toolTip_SNP.SetToolTip(Open, resources.GetString("Open.ToolTip"));
             Open.UseVisualStyleBackColor = true;
             Open.UseWaitCursor = true;
             Open.Click += Open_Click_1;
             // 
-            // openFileDialog1
+            // openFileDialog_SNP
             // 
-            openFileDialog1.FileName = "openFileDialog1";
+            openFileDialog_SNP.FileName = "openFileDialog1";
             // 
-            // toolTip1
+            // toolTip_SNP
             // 
-            toolTip1.Popup += toolTip1_Popup;
+            toolTip_SNP.Popup += toolTip1_Popup;
             // 
             // Sort
             // 
@@ -161,8 +161,8 @@ namespace Tyuiu.SeledkovNP.Sprint7.From
         private Button button_save_SN;
         private Button Info;
         private Button Open;
-        private OpenFileDialog openFileDialog1;
-        private ToolTip toolTip1;
+        private OpenFileDialog openFileDialog_SNP;
+        private ToolTip toolTip_SNP;
         private Button Sort;
         private Button Poisk;
         private TextBox textBox_SNP;

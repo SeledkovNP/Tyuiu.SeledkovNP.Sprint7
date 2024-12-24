@@ -31,10 +31,10 @@ namespace Tyuiu.SeledkovNP.Sprint7.From
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Info));
-            toolTip1 = new ToolTip(components);
+            toolTip_SNP1 = new ToolTip(components);
             pictureBox1 = new PictureBox();
             Let = new Button();
-            openFileDialog1 = new OpenFileDialog();
+            openFileDialog_SNP1 = new OpenFileDialog();
             Inforac = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -47,7 +47,7 @@ namespace Tyuiu.SeledkovNP.Sprint7.From
             pictureBox1.Size = new Size(261, 249);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            toolTip1.SetToolTip(pictureBox1, "Иконка ползователя");
+            toolTip_SNP1.SetToolTip(pictureBox1, "Иконка ползователя");
             // 
             // Let
             // 
@@ -58,13 +58,13 @@ namespace Tyuiu.SeledkovNP.Sprint7.From
             Let.Size = new Size(109, 37);
             Let.TabIndex = 2;
             Let.Text = "Закрыт";
-            toolTip1.SetToolTip(Let, "Перейти на прошлую страницу");
+            toolTip_SNP1.SetToolTip(Let, "Перейти на прошлую страницу");
             Let.UseVisualStyleBackColor = false;
             Let.Click += Let_Click;
             // 
-            // openFileDialog1
+            // openFileDialog_SNP1
             // 
-            openFileDialog1.FileName = "openFileDialog1";
+            openFileDialog_SNP1.FileName = "openFileDialog1";
             // 
             // Inforac
             // 
@@ -98,8 +98,8 @@ namespace Tyuiu.SeledkovNP.Sprint7.From
 
         #endregion
 
-        private ToolTip toolTip1;
-        private OpenFileDialog openFileDialog1;
+        private ToolTip toolTip_SNP1;
+        private OpenFileDialog openFileDialog_SNP1;
         private PictureBox pictureBox1;
         private TextBox Inforac;
         private Button Let;

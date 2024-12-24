@@ -30,16 +30,16 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Saev_menu));
-            openFileDialog1 = new OpenFileDialog();
-            toolTip1 = new ToolTip(components);
+            openFileDialog_SNP2 = new OpenFileDialog();
+            toolTip_SNP2 = new ToolTip(components);
             Closed = new Button();
             Save = new Button();
             saveFileDialog_SNP = new SaveFileDialog();
             SuspendLayout();
             // 
-            // openFileDialog1
+            // openFileDialog_SNP2
             // 
-            openFileDialog1.FileName = "openFileDialog1";
+            openFileDialog_SNP2.FileName = "openFileDialog1";
             // 
             // Closed
             // 
@@ -50,7 +50,7 @@
             Closed.Size = new Size(89, 36);
             Closed.TabIndex = 0;
             Closed.Text = "Закрыт";
-            toolTip1.SetToolTip(Closed, "Перейти в прошлое окно");
+            toolTip_SNP2.SetToolTip(Closed, "Перейти в прошлое окно");
             Closed.UseVisualStyleBackColor = false;
             Closed.Click += Closed_Click;
             // 
@@ -63,7 +63,7 @@
             Save.Size = new Size(89, 37);
             Save.TabIndex = 1;
             Save.Text = "Сохранить";
-            toolTip1.SetToolTip(Save, "Безвозратно сохранить файл");
+            toolTip_SNP2.SetToolTip(Save, "Безвозратно сохранить файл");
             Save.UseVisualStyleBackColor = false;
             Save.Click += Save_Click;
             // 
@@ -83,8 +83,8 @@
 
         #endregion
 
-        private OpenFileDialog openFileDialog1;
-        private ToolTip toolTip1;
+        private OpenFileDialog openFileDialog_SNP2;
+        private ToolTip toolTip_SNP2;
         private Button Closed;
         private Button Save;
         private SaveFileDialog saveFileDialog_SNP;

@@ -138,7 +138,7 @@
   <data name="button_save_SN.Text" xml:space="preserve">
     <value>Сохранить</value>
   </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="toolTip_SNP.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>156, 17</value>
   </metadata>
   <data name="button_save_SN.ToolTip" xml:space="preserve">
@@ -306,7 +306,7 @@
   <data name="&gt;&gt;Open.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="openFileDialog_SNP.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <data name="Sort.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
@@ -399,6 +399,51 @@
   <data name="&gt;&gt;textBox_SNP.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="&gt;&gt;dataGridViewMainGrid.Name" xml:space="preserve">
+    <value>dataGridViewMainGrid</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewMainGrid.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewMainGrid.Parent" xml:space="preserve">
+    <value>panelList</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewMainGrid.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textPois.Name" xml:space="preserve">
+    <value>textPois</value>
+  </data>
+  <data name="&gt;&gt;textPois.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textPois.Parent" xml:space="preserve">
+    <value>panelList</value>
+  </data>
+  <data name="&gt;&gt;textPois.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 89</value>
+  </data>
+  <data name="panelList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1061, 487</value>
+  </data>
+  <data name="panelList.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;panelList.Name" xml:space="preserve">
+    <value>panelList</value>
+  </data>
+  <data name="&gt;&gt;panelList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelList.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelList.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="dataGridViewMainGrid.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 97</value>
   </data>
@@ -440,27 +485,6 @@
   </data>
   <data name="&gt;&gt;textPois.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="panelList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>102, 89</value>
-  </data>
-  <data name="panelList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1061, 487</value>
-  </data>
-  <data name="panelList.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;panelList.Name" xml:space="preserve">
-    <value>panelList</value>
-  </data>
-  <data name="&gt;&gt;panelList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelList.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelList.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <metadata name="saveFileDialog_SNP2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>253, 17</value>
@@ -17504,16 +17528,16 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Seledkov N.P.</value>
   </data>
-  <data name="&gt;&gt;openFileDialog1.Name" xml:space="preserve">
-    <value>openFileDialog1</value>
+  <data name="&gt;&gt;openFileDialog_SNP.Name" xml:space="preserve">
+    <value>openFileDialog_SNP</value>
   </data>
-  <data name="&gt;&gt;openFileDialog1.Type" xml:space="preserve">
+  <data name="&gt;&gt;openFileDialog_SNP.Type" xml:space="preserve">
     <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
-    <value>toolTip1</value>
+  <data name="&gt;&gt;toolTip_SNP.Name" xml:space="preserve">
+    <value>toolTip_SNP</value>
   </data>
-  <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
+  <data name="&gt;&gt;toolTip_SNP.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;saveFileDialog_SNP2.Name" xml:space="preserve">
